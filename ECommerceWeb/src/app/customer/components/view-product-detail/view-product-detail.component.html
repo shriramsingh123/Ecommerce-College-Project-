@@ -1,0 +1,54 @@
+<div class="prod-details">
+    <div class="dashboard-btn">
+        <button routerLink="/customer/dashboard">&lt;Back to results</button>
+    </div>
+    <div class="prod-detail-container">
+        <div>
+            <div class="img-slider">
+                <img [src]="productDetail.processedImg" alt="prod-detail-images">
+                <div>
+                    <button id="prev">&lt;</button>
+                    <button id="next">&gt;</button>
+                </div>
+            </div>
+            <div class="prod-img">
+                <img [src]="productDetail.processedImg" alt="smallImg">
+                <img [src]="productDetail.processedImg" alt="smallImg">
+                <img [src]="productDetail.processedImg" alt="smallImg">
+                <img [src]="productDetail.processedImg" alt="smallImg">
+            </div>
+        </div>
+        <div class="desc-container">
+            <div class="shop-name">
+                <span>{{productDetail.shopName}}</span>
+            </div>
+            <div class="prod-name">
+                <span>{{productDetail.productName}}</span>
+            </div>
+            <span class="discount-price">${{productDetail.discountPrice | number}} </span><span class="real-price">price : <del class="price">{{productDetail.price | number}}</del></span>
+             
+            <div class="select-size">
+                <div>
+                    <span>Select size</span><span class="size-chart">size chart</span>
+                </div>
+                <div class="sizes">
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                    <button>XXL</button>
+                </div>
+            </div>
+
+            <div class="action-btns">
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="wish-list-btn" (click)="addToWishlist(productId)">💕 WishList</button>
+            </div>
+
+            <div class="desc">
+                <h3>About this Item</h3>
+                <p>{{productDetail.product_desc}}</p>
+            </div>
+        </div>
+    </div>
+</div>

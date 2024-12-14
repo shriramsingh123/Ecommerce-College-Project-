@@ -1,0 +1,74 @@
+
+.myorder {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    border-width: 2px;
+}
+
+.myorder-container{
+    background-color: rgb(226, 213, 213);
+}
+
+
+.prod-info-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+}
+
+.myorder-prod {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(243, 236, 236);
+    margin-left: 5%;
+    width: 600px;
+    height: 100px;
+    
+}
+
+.myorder-img{
+    margin: 30px;  
+    display: flex;
+    flex-direction: row; 
+}
+
+.myorder-img img{
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+
+.myorder-buttons {
+    margin-left: 100px;
+}
+
+.myorder-buttons button {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+}
+
+#track-order {
+    background-color: rgb(14, 209, 14);
+    color: white;
+    transition: 1s;
+}
+
+#track-order:hover {
+    background-color: rgb(157, 255, 9);
+}
+
+#view-order,#get-invoice,#edit-order {
+    color: blueviolet;
+}
+
+#view-order:hover,#get-invoice:hover,#edit-order:hover {
+    border-width: 1px;
+    border-style: solid;
+}

@@ -1,0 +1,53 @@
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div>
+            <img class="slide-img" src="assets/images/{{images[imgNum]}}">
+        </div>
+        <div class="slide-text">
+            <h5>Company Name</h5>
+            <div class="slide-text-discounts">
+               <div>
+                <div>UP</div>
+                <div>TO</div>
+               </div>
+               <div>50</div>
+               <div>
+                <div>%</div>
+                <div>OFF</div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="prev" (click)="slidePrev()">&lt;</button>
+    <button class="next" (click)="slideNext()">&gt;</button>
+
+</div>
+
+<!-- Seller Products Container  -->
+
+<div class="seller-product-container">
+    <h1>Your Products</h1>
+    <div class="seller-container">
+
+        <div *ngFor="let product of products">
+            <div class="buster-cards">
+                <div>
+                    <img [src]="product.processedImg" alt="Card-Img">
+                </div>
+                <div class="prod-details">
+                    <p><span class="discounts">{{product.discounts}} % off</span><span class="discount-title">Great Indian Festival</span>
+                    </p>
+                    <p><span class="pay-price">$1,299.00</span> <span class="real-price">MRP: ${{product.price}}</span></p>
+                    <p class="prod-title">{{product.productName}}</p>
+                </div>
+                <div class="product-action-btn">
+                    <button routerLink="/seller/update-product/{{product.productId}}">Update</button>
+                    <button (click)="deleteProduct(product.productId)">Delete</button>
+                    <button routerLink="/seller/faq/{{product.productId}}">Add Faq</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

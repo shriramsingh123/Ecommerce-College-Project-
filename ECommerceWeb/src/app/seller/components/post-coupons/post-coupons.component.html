@@ -1,0 +1,31 @@
+<div class="coupon-container">
+    <div class="coupon-heading">
+        <h1>Post New Coupons</h1>
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-detail">
+            <label class="label-name">Name : </label>
+            <input type="text" placeholder="Enter coupon name " formControlName="couponName">
+        </div>
+
+        <div class="form-detail">
+            <label class="label-name">Coupon Code</label>
+            <input type="text" placeholder="Make A Coupon Code" formControlName="couponCode">
+        </div>
+
+        <div class="form-detail">
+            <label class="label-name">Discount </label>
+            <input type="number" placeholder="Enter the discount percent" formControlName="discounts">
+        </div>
+
+        <div class="form-detail">
+            <label class="label-name">Expiration Date : </label>
+            <input type="date" placeholder="valid till (DD/MM/YYYY) " formControlName="expirationDate">
+        </div>
+
+        <div class="form-action">
+            <button type="submit">Add Coupon</button>
+        </div>
+    </form>
+</div>

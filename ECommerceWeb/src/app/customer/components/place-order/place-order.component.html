@@ -1,0 +1,113 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="order-container">
+            <div>
+                <h1>Logo🦋✈️</h1>
+            </div>
+            <div id="card-payment">
+                <label>Express checkout</label>
+                <div class="img-back">
+                    <div id="card-img">
+                        <img src="assets/images/visa.png" alt="Payment">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p>OR</p>
+            <br>
+            <div id="region-input">
+                <label>Contact Information</label><br>
+                <input id="email-input" type="email" placeholder="Email" formControlName="email"><br>
+                <input id="checkbox-input" type="checkbox" [disabled]="true"><span>Email me with news and offers</span>
+            </div>
+        
+            <div>
+                <div id="address-info">
+                    <label>Shipping Address</label><br>
+                    <label style="font-size: 10px;">Country/Region</label>
+                    <select formControlName="country">
+                        <optgroup>
+                            <option value="SPAIN">Spain</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">U.K</option>
+                            <option value="CHINA">CHINA</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div id="name-field">
+                    <input type="text" placeholder="First Name" formControlName="firstName">
+                    <input type="text" placeholder="Last Name" formControlName="lastName">
+                </div>
+                <div id="street-info">
+                    <input type="text" placeholder="Street and House number" formControlName="street"><br>
+                    <input type="text" placeholder="Apartment,Suits,etc(optional)" formControlName="apartment">
+                </div>
+                <div id="pincode-info">
+                    <input type="text" placeholder="postal code" formControlName="postalCode">
+                    <input type="text" placeholder="city" formControlName="city">
+                    <div>
+                        <label>Proviance</label>
+                        <select formControlName="province">
+                            <optgroup>
+                                <option value="Shanghai">Shanghai</option>
+                                <option value="HongKong">HongKong</option>
+                                <option value="Beijing">Beijing</option>
+                                <option value="Macao">Macao</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div id="phone-no">
+                    <input id="phone" type="text" placeholder="Phone" formControlName="mobileNo"><br>
+                    <input id="phone-checkbox" type="checkbox" [disabled]="true"><span>Save the information for the next time.</span>
+                </div>
+
+                <div>
+                    <label>Payment Method</label>
+                   <select formControlName="payment">
+                    <optgroup>
+                        <option value="Cash-On-Delivery">Cash-ON-Delivery</option>
+                        <option value="paypal">Paypal-Not Available</option>
+                    </optgroup>
+                   </select>
+                </div>
+
+
+            </div>
+        
+            <div id="action-buttons">
+                <button id="return-to-cart" routerLink="/customer/carts">Return to cart</button>
+                <button id="continue-shopping">Place Order</button>
+            </div>
+           
+        </div>
+    </form>
+</div>
+
+<div id="info-buttons">
+    <button>Returned Policy</button>
+    <button>Shipping Policy</button>
+    <button>Privacy Policy</button>
+    <button>Terms of service</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+@for (food of foods; track food) {
+    <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+  } -->

@@ -1,0 +1,30 @@
+<div class="post-container">
+
+    <div class="form-container">
+        <div class="title">
+            <h1>Add Category</h1>
+        </div>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+            <div class="form-details">
+                <label class="form-label">Name : </label><br>
+                <input type="text" placeholder="Enter the Category Name" formControlName="name">
+            </div>
+
+            <div class="form-details">
+                <label class="form-label">Description : </label><br>
+                <textarea name="" id="" cols="35" rows="5" placeholder="Enter About Category" formControlName="desc"></textarea>
+            </div>
+
+            <div class="form-details">
+                <label class="form-label">Add An Image</label>
+                <input type="file" (change)="onFileSelected($event)">
+            </div>
+
+            <div class="form-details">
+                <button type="submit">Add Category</button>
+            </div>
+        </form>
+    </div>
+</div>

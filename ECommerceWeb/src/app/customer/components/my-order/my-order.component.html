@@ -1,0 +1,37 @@
+<div class="myorder">
+    <h1>Order history</h1>
+    <p>3 orders</p>
+  
+    <div class="myorder-container">
+      <table *ngFor="let order of myorders">
+        <thead>
+          <tr>
+            <th>Dispatched</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="prod-info-container">
+              <div>
+                <div class="myorder-prod">
+                  <div class="myorder-img">
+                    <img [src]="image" alt="prod-img" *ngFor="let image of order.processedImages">
+                  </div>
+                  <div>
+                    <h3>{{ order.orderStatus }}</h3>
+                    <p>7am - 7pm</p>
+                  </div>
+                </div>
+              </div>
+              <div class="myorder-buttons">
+                <button id="track-order">Track Order</button><br>
+                <button id="view-order">View order details</button><br>
+                <button id="get-invoice">Get Invoice</button><br>
+                <button id="edit-order">Edit Orders</button><br>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
