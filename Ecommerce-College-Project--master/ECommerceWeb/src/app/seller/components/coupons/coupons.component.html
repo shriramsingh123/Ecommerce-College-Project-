@@ -1,0 +1,26 @@
+<div class="coupon-container">
+    <div class="heading">
+        <h1>All Coupons List</h1>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th><h1> Id</h1></th>
+                <th><h1>Name</h1></th>
+                <th><h1>Discount</h1></th>
+                <th><h1> Code</h1></th>
+                <th><h1>Expiration-Date</h1></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let coupon of coupons">
+                <td>{{coupon.couponId}}</td>
+                <td>{{coupon.couponName}}</td>
+                <td>{{coupon.discounts}} %</td>
+                <td>{{coupon.couponCode}}</td>
+                <td>{{coupon.expirationDate | date}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

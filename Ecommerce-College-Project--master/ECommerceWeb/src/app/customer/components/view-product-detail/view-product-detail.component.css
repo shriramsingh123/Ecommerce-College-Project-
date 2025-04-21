@@ -1,0 +1,193 @@
+.prod-details {
+    background-color: rgb(250, 248, 248);
+    margin-top: 0px;
+}
+
+.prod-details .dashboard-btn button {
+    background-color: transparent;
+    margin-top: 25px;
+    margin-left: 35px;
+    border: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    transition-duration: 1s;
+}
+
+.prod-details .dashboard-btn button:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.prod-detail-container {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    margin-top: 35px;
+}
+
+.prod-detail-container .img-slider {
+    position: relative;
+   
+}
+
+.prod-detail-container .img-slider img {
+    width: 550px;
+    height: 650px;
+    margin-left: 45px;
+}
+
+.prod-detail-container .img-slider button {
+    position: absolute;
+    top: -25px;
+    margin-top: 50%;
+    width: 100px;
+    height: 150px;
+    margin-left: 10px;
+    font-weight: 200;
+    border: none;
+    border-radius: 20px;
+    font-size: 150px;
+    background-color: transparent;
+    opacity: 0;
+}
+
+#next {
+    margin-left: 535px;
+}
+
+.prod-detail-container .img-slider button:hover{
+    color: #fff;
+    background-color: rgb(245, 241, 242);
+    opacity: 1;
+}
+
+.prod-img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.prod-img img {
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    
+}
+
+.prod-detail-container .desc-container {
+    background-color: #f5f0f0;
+    margin-left: 100px;
+    width: 100%;
+    margin-left: 35px;
+}
+
+.prod-detail-container .desc-container .shop-name {
+    font-weight: bold;
+}
+
+.prod-detail-container .desc-container .prod-name{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.prod-detail-container .desc-container .discount-price {
+    font-weight: bold;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.prod-detail-container .desc-container .real-price {
+    margin-left: 15px;
+}
+
+.prod-detail-container .desc-container .real-price .price{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.prod-detail-container .desc-container .select-size {
+    margin-top: 35px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.prod-detail-container .desc-container .select-size .size-chart {
+    margin-left: 25px;
+}
+
+.prod-detail-container .desc-container .select-size .sizes {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.prod-detail-container .desc-container .select-size .sizes button {
+    border: none;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.prod-detail-container .desc-container .select-size .sizes button:hover {
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
+
+
+.prod-detail-container .desc-container .action-btns {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 250px;
+    margin-top: 45px;
+}
+
+.prod-detail-container .desc-container .action-btns button {
+    border: none;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 35px;
+    font-weight: bold;
+}
+
+
+.prod-detail-container .desc-container .action-btns .add-to-cart-btn {
+    background-color: blue;
+    transition: 1s;
+}
+
+.prod-detail-container .desc-container .action-btns .add-to-cart-btn:hover {
+    background-color: rgb(83, 83, 165);
+    transform: scale(1.1);
+}
+
+.prod-detail-container .desc-container .action-btns .wish-list-btn {
+    background-color: #9b6868;
+    transition: 1s;
+}
+
+.prod-detail-container .desc-container .action-btns .wish-list-btn:hover {
+    background-color: #d6c4c4;
+    text-decoration: solid;
+    transform: scale(1.1);
+}
+
+.prod-detail-container .desc-container .desc {
+    margin-top: 65px;
+}
+
+.prod-detail-container .desc-container .desc h3 {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.prod-detail-container .desc-container .desc p {
+    width: 450px;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}

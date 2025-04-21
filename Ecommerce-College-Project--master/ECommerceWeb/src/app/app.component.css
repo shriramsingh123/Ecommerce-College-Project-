@@ -1,0 +1,159 @@
+/* No Login Navbar */
+
+.navbar nav {
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    text-align: center;
+}
+
+.navbar nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.navbar nav button:hover {
+    transform: scale(1.1);
+    background-color: rgb(104, 59, 177);
+    cursor: pointer;
+}
+
+
+/* Customer Navbar */
+
+.customer-navbar {
+    width: 100%;
+}
+
+#nav1 {
+    margin-top: 0;
+    display: flex;
+    background-color: rgb(247, 246, 241);
+    flex-direction: row;
+    justify-content: right;
+    height: 50px;
+
+}
+
+#nav1-buttons {
+    padding-top: 1%;
+    margin-right: 5%;
+}
+
+#nav1-buttons button {
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.nav1-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5%;
+    margin-top: 7px;
+}
+
+#nav2 {
+    height: 65px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.nav2-logo {
+    margin-right: 40px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav2-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    padding-top: 5px;
+}
+
+.nav2-buttons button {
+    margin-right: 20px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.nav2-buttons button:hover {
+    background-color: lightgray;
+}
+
+#search-product{
+    margin-right: 300px;
+    margin-top: 10px;
+}
+input {
+    height: 40px;
+    width: 600px;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+}
+
+#search-product button {
+    position: absolute;
+    background-color: #fff;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+/*  Seller Navbar */
+
+#nav3 {
+    background-color: rgb(194, 83, 83);
+    padding-bottom: 0;
+}
+
+#nav3-img {
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+#nav3-buttons {
+    float: right;
+    margin-right: 10%;
+}
+
+#nav3-buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+#nav3-buttons button:hover {
+    cursor: pointer;
+    background-color: rgb(179, 103, 103);
+}

@@ -1,0 +1,174 @@
+.order-container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   border-style: solid;
+   border-width: 1px;
+   margin-left: 10%;
+   width: 60%;
+}
+
+#card-payment {
+    text-align: center; 
+}
+#card-payment label {
+    font-weight: bold;
+}
+
+.img-back {
+    border: none;
+    background-color: rgb(233, 224, 224);
+    border-width: 2px;
+    margin-top: 0;
+    padding: 8px;
+}
+
+#card-img {
+    background-color: yellow;
+    width: 150px;
+    height: 50px;
+    padding-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#card-img img {
+    width: 50px;
+    height: 40px;
+    padding-top: 7px;
+    padding-right: 100px;
+}
+
+#region-input {
+    width: 60%;
+}
+
+#region-input label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#email-input {
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#checkbox-input {
+    margin-top: 10px;
+    font-size: medium;
+    font-style: italic;
+}
+
+#address-info{
+    margin-top: 50px;
+}
+
+#address-info label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#address-info mat-form-field {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+#name-field {
+    display: flex;
+    flex-direction: row;
+}
+
+#name-field input {
+    height: 30px;
+    width: 48%;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#street-info {
+    margin-top: 20px;
+}
+
+#street-info input {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#pincode-info {
+    display: flex;
+    flex-direction: row;
+}
+
+#pincode-info input {
+    height: 30px;
+    width: 30%;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#pincode-info mat-form-field {
+    width: 35%;
+    height: 70px;
+
+}
+
+#phone {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#phone-checkbox {
+    margin-top: 10px;
+}
+
+#action-buttons{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#action-buttons button {
+    height: 35px;
+    width: 150px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+#return-to-cart {
+background-color: white;
+margin-right: 100px;
+}
+
+#continue-shopping {
+background-color: rgb(39, 39, 167);
+margin-left: 100px;
+}
+
+#info-buttons {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    margin-top: 50px;
+}
+
+#info-buttons button {
+    border: none;
+    margin-right: 20px;
+    color: blue;
+
+}
+
+
+

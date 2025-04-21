@@ -1,0 +1,103 @@
+<div class="search-product-container">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img class="slide-img" src="assets/images/{{images[imgNum]}}">
+            <div class="text">Caption</div>
+        </div>
+
+        <button class="prev" (click)="slidePrev()">&lt;</button>
+        <button class="next" (click)="slideNext()">&gt;</button>
+    </div>
+
+
+
+    <!-- Search Similar Product -->
+
+    <div class="blockbuster-deals-container">
+        <h1>Similar Search Product</h1>
+        <div class="blockbuster-container">
+
+            <div *ngFor="let product of products">
+                <div class="buster-cards">
+                    <div>
+                        <img [src]="product.processedImg" alt="Card-Img">
+                    </div>
+                    <div class="prod-details">
+                        <p><span class="discounts">{{product.discounts}}% off</span><span class="discount-title">Great
+                                Indian Festival</span>
+                        </p>
+                        <p><span class="pay-price">$ {{product.discountPrice | number}}</span> <span
+                                class="real-price">MRP: <del>${{product.price}}</del></span></p>
+                        <p class="prod-title">{{product.productName}}</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="cart-button" (click)="addToCart(product.productId)">Add To Cart</button>
+                        <button class="get-detail" routerLink="/customer/prod-detail/{{product.productId}}">Get
+                            Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div *ngFor="let i of four">
+            <div class="sponsor-cards">
+                <header>
+                    <span>Up to 70% off | Appliances and more from stores near you. </span>
+                </header>
+                <div class="img-container">
+                    <div id="img-cont1">
+     
+                        <div class="img-details">
+                            <img src="assets/images/car8.jpg" alt="img1">
+                            <span>Up to 50% off Home decor</span>
+                        </div>
+                        <div class="img-details">
+                            <img src="assets/images/car8.jpg" alt="img2">
+                            <span>Furniture</span>
+                        </div>
+                    </div>
+                    <div id="img-cont1">
+                        <div class="img-details">
+                            <img src="assets/images/car8.jpg" alt="img1">
+                            <span>Up to 50% off Home decor</span>
+                        </div>
+                        <div class="img-details">
+                            <img src="assets/images/car8.jpg" alt="img2">
+                            <span>Furniture</span>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <button>See all offer</button>
+                </footer>
+            </div>
+        </div>
+     </div>
+
+    <!-- Shop Deals in Top Categories -->
+    <div class="category-container">
+        <header style="padding-top: 20px;">
+            <span id="card-head">Shop Deals in Top Categories</span>
+            <span id="explore">Explore all categories</span>
+        </header>
+        <div class="category-card-container">
+            <div *ngFor="let category of categories">
+                <div class="category-card">
+                    <div>
+                        <img [src]="category.processedImg" alt="Categories - img">
+                        <p class="category-discount">Up to 40% off</p>
+                        <p class="category-name">{{category.categoryName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<footer>
+    <h1>Footer Coding Left</h1>
+</footer>

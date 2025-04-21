@@ -1,0 +1,22 @@
+<div class="profile-page">
+    <div class="back-img">
+        <img src="assets/images/profile-back.jpg">
+        <div class="profile-img">
+            <img [src]="profileData.profileImg" alt="profile-image">
+             <span>{{profileData.firstName}} {{profileData.lastName}}</span>
+        </div>
+    </div>
+
+    <div class="details">
+        <div>
+            <p>Email:- <span>{{profileData.email}}</span></p>
+            <p>Phone No:- <span>{{profileData.mobileNo}}</span></p>
+            <p>Gender :- <span>{{profileData.gender}}</span></p>
+        </div>
+        <div>
+            <p>Country :- <span>{{profileData.nationality}}</span></p>
+            <p>Proviance :- <span>{{profileData.province}}</span></p>
+            <p>Role :- <span>{{profileData.roles}}</span></p>
+        </div>
+    </div>
+</div>

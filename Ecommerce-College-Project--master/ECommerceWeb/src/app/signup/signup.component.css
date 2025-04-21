@@ -1,0 +1,150 @@
+.register-form {
+    padding-top: 20px;
+    background-color: rgb(112, 112, 177);
+    height: 543px;
+}
+
+.form-container {
+    background-color: #fff;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    height: 500px;
+}
+
+.form-container header {
+    font-weight: bolder;
+    display: flex;
+    margin-left: 35px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.register-form .form-field {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+}
+
+.register-form .form-field .form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.register-form .form-field .form-input .input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form .form-field .form-input .input-field label,
+.register-form .form-field .form-input .select-opt label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.register-form .form-field .form-input .input-field input {
+    height: 35px;
+    width: 335px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.register-form .form-field .form-input .select-opt {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form .form-field .form-input .select-opt select {
+    height: 35px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.register-form .form-field .profile-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form .form-field .profile-img label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.register-form .form-field .profile-img input {
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.register-form .form-field .action-button {
+    float: right;
+    margin-right: 50px;
+}
+
+.register-form .form-field .action-button #enabled-btn {
+    border: none;
+    border-radius: 5px;
+    width: 85px;
+    height: 45px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+}
+
+.register-form .form-field .action-button #disabled-btn {
+    border: none;
+    border-radius: 5px;
+    width: 85px;
+    height: 45px;
+    background-color: lightblue;
+    color: white;
+    font-size: 15px;
+}
+
+.register-form .form-field .action-button #enabled-btn:hover {
+    background-color: rgb(59, 59, 161);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.register-form .form-field p {
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+
+.register-form .form-field p button {
+    border: none;
+    color: blue;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.register-form .form-field p button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.errors {
+    background-color: rgb(228, 211, 211);
+    width: 300px;
+    height: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: red;
+}
+
+.errors span {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 12.5px;
+}
