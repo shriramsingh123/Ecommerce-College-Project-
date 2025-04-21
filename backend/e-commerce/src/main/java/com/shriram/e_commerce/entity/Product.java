@@ -20,12 +20,22 @@ public class Product {
     private int price;
     private int discounts;
 
+<<<<<<< HEAD
     @Column(length = 50)
     private String shopName;
 
     @Column(length = 50)
     private String productName;
 
+=======
+    @Column(length = 200)
+    private String shopName;
+
+    @Column(length = 200)
+    private String productName;
+
+    @Column(length = 500)
+>>>>>>> c6bd71b (updated cards in frontend)
     private String product_desc;
 
     @Lob

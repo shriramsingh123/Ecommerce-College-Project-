@@ -10,7 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 export class DashboardComponent {
 
 
+<<<<<<< HEAD
   images = ['car8.jpg', 'lamborghini.jpg', 'nack.jpg'];
+=======
+  images = ['shoes.avif','diwali.png','photso.webp'];
+>>>>>>> c6bd71b (updated cards in frontend)
   imgNum = 0;
   four = [1, 2, 3, 4];
   five = [1, 2, 3, 4, 5];

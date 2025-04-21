@@ -9,9 +9,18 @@ import { CustomerService } from '../../services/customer.service';
 })
 export class CustomerHomePageComponent implements OnInit{
 
+<<<<<<< HEAD
   images = ['car8.jpg','lamborghini.jpg','nack.jpg'];
   imgNum = 0;
   four =[1,2,3,4];
+=======
+  advertisement = ['shoes.avif','diwali.png','photso.webp'];
+  discountedDeals = ['discount1.webp','discount2.webp','discount3.webp'];
+  beautyandmakupAdvertisement = ['makup1.webp','makup2.webp','makup3.jpg'];
+  blockbasterproductimg = ['car8.jpg','lamborghini.jpg','nack.jpg','ring.jpg'];
+  imgNum = 0;
+  four =[0,1,2,3];
+>>>>>>> c6bd71b (updated cards in frontend)
   five =[1,2,3,4,5];
   products: any =[];
   categories: any = [];

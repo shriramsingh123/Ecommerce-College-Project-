@@ -105,5 +105,11 @@
         }
       }
     }
+<<<<<<< HEAD
+=======
+  },
+  "cli": {
+    "analytics": "03f359ff-9a6d-4ff6-b2ed-87e56b6de2ed"
+>>>>>>> c6bd71b (updated cards in frontend)
   }
 }

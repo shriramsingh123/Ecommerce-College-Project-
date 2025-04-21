@@ -12,8 +12,13 @@ export class SignupComponent implements OnInit {
 
   roles = ["CUSTOMER", "SELLER"];
   genders = ["MALE", "FEMALE", "TRANSGENDER", "PREFER NOT TO SAY"];
+<<<<<<< HEAD
   countries = ["CHINA", "INDIA", "U.S.A", "U.K", "ISRAEL"];
   provinces = ["BEIJING", "HONG-KONG", "MACOW", "WUHAN"];
+=======
+  countries = ["INDIA"];
+  provinces = ["ASSAM","BIHAR","CHHATISGARH","JAMMU & KASHMIR","DELHI","MAHARASTRA"];
+>>>>>>> c6bd71b (updated cards in frontend)
 
   form!: FormGroup;
   profileImage!:File;

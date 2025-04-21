@@ -10,7 +10,11 @@ export class DashboardComponent implements OnInit{
 
   products : any = [];
 
+<<<<<<< HEAD
   images = ['car8.jpg','lamborghini.jpg','nack.jpg'];
+=======
+  images = ['shoes.avif','diwali.png','photso.webp'];
+>>>>>>> c6bd71b (updated cards in frontend)
   imgNum = 0;
   count : number[] = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
   four =[1,2,3,4];
@@ -42,6 +46,10 @@ ngOnInit(): void {
   this.sellerService.getAllProducts().subscribe((res: any) => {
     res.forEach((element : any) => {
       element.processedImg = 'data:image/jpeg;base64,'+element.productImg;
+<<<<<<< HEAD
+=======
+      element.discountPrice = element.price - ((element.price * element.discounts) / 100);
+>>>>>>> c6bd71b (updated cards in frontend)
       this.products.push(element);
     });
   })

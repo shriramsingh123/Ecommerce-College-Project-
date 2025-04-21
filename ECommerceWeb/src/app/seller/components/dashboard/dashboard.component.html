@@ -38,7 +38,11 @@
                 <div class="prod-details">
                     <p><span class="discounts">{{product.discounts}} % off</span><span class="discount-title">Great Indian Festival</span>
                     </p>
+<<<<<<< HEAD
                     <p><span class="pay-price">$1,299.00</span> <span class="real-price">MRP: ${{product.price}}</span></p>
+=======
+                    <p><span class="pay-price">$ {{product.discountPrice | number}}</span> <span class="real-price">MRP: $<del>{{product.price}}</del></span></p>
+>>>>>>> c6bd71b (updated cards in frontend)
                     <p class="prod-title">{{product.productName}}</p>
                 </div>
                 <div class="product-action-btn">
