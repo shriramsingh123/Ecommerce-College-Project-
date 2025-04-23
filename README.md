@@ -39,7 +39,7 @@ git clone [Ecommerce-College-Project-]
 
 
 2️⃣ Backend Setup (Spring Boot):
-- Open the backend folder in your IDE (IntelliJ or VS Code).
+- Open the backend folder in your IDE IntelliJ.
 - Configure the database credentials in application.properties.
 - Run the Spring Boot application.
 
